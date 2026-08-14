@@ -13,14 +13,13 @@ services:
       - key: DatabaseProvider
         value: SQLite
 
-  # 2. Frontend React Vite Static Site
+  # 2. Frontend React Vite Static Site (Static sites do not require region)
   - type: web
     env: static
     name: examora-ai-frontend
     rootDir: ./frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
-    region: singapore
     plan: free
     routes:
       - type: rewrite
