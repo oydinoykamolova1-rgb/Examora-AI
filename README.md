@@ -1,5 +1,11 @@
 # 🍃 Examora AI — Smart Exam, Anti-Cheat Proctoring & 3D Certificate Platform
 
+[![NET 10](https://img.shields.io/badge/ASP.NET%20Core-10.0-purple.svg)](https://dotnet.microsoft.com/)
+[![React 19](https://img.shields.io/badge/React-19.0-blue.svg)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.0-blue.svg)](https://www.typescriptlang.org/)
+[![TailwindCSS v4](https://img.shields.io/badge/TailwindCSS-v4.0-38bdf8.svg)](https://tailwindcss.com/)
+[![Render Deploy](https://img.shields.io/badge/Render-Deploy%20Ready-success.svg)](https://render.com/)
+
 **Examora AI** — ASP.NET Core 10 Monolith Web API va React 19 + TypeScript + Vite + TailwindCSS v4 negizida yaratilgan zamonaviy online imtihon, anti-cheat nazorati hamda 3D metall/shisha sertifikatlash platformasi.
 
 ---
@@ -30,7 +36,7 @@
 - **Core**: React 19, TypeScript, Vite
 - **Styling**: TailwindCSS v4, Vanilla Glassmorphism CSS
 - **Icons & FX**: Lucide React, Canvas Confetti
-- **State & i18n**: React Context API, Multi-language support
+- **State & i18n**: React Context API, Multi-language support (Uzbek, English, Russian, Spanish, German, French, Turkish)
 
 ---
 
@@ -42,6 +48,7 @@ cd backend
 dotnet restore
 dotnet run --project TestPlatform.WebApi/TestPlatform.WebApi.csproj
 ```
+*(Backend API va Scalar Hujjatlar: `http://localhost:5000/scalar/v1`)*
 
 ### Frontend:
 ```bash
@@ -49,6 +56,7 @@ cd frontend
 npm install
 npm run dev
 ```
+*(Frontend UI: `http://localhost:3000`)*
 
 ---
 
@@ -60,4 +68,5 @@ Batafsil ma'lumot uchun **[RENDER_DEPLOY_GUIDE.md](RENDER_DEPLOY_GUIDE.md)** fay
 ---
 
 ## 📝 Dastur Muallifi
-**Kamolova Oydinoy** — ASP.NET Core & React Vite Fullstack Developer
+**Kamolova Oydinoy** — ASP.NET Core & React Vite Fullstack Developer  
+**GitHub Repository**: [https://github.com/oydinoykamolova1-rgb/Examora-AI.git](https://github.com/oydinoykamolova1-rgb/Examora-AI.git)
