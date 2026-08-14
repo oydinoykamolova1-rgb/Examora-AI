@@ -1,0 +1,29 @@
+# Build and Release Outputs
+bin/
+obj/
+dist/
+node_modules/
+.vs/
+.vscode/
+.idea/
+
+# SQLite Database Files
+*.db
+*.db-shm
+*.db-wal
+testplatform.db
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Environment & Logs
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #f6faf7;
+  --bg-card: #ffffff;
+  --bg-card-subtle: #edf4ef;
+  --text-main: #14281f;
+  --text-muted: #4e6b5d;
+  --border-color: #cde0d5;
+  
+  --nature-primary: #10b981;
+  --nature-primary-hover: #059669;
+  --nature-secondary: #34d399;
+  --nature-accent: #f59e0b;
+  --nature-amber: #d97706;
+
+  --card-3d-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.dark {
+  --bg-primary: #06130e;
+  --bg-card: #0d2119;
+  --bg-card-subtle: #142f24;
+  --text-main: #f2faf5;
+  --text-muted: #8bb39e;
+  --border-color: #1e4233;
+  
+  --nature-primary: #34d399;
+  --nature-primary-hover: #6ee7b7;
+  --nature-secondary: #059669;
+  --nature-accent: #fbbf24;
+  --nature-amber: #f59e0b;
+
+  --card-3d-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Organic 3D Glassmorphism Utilities */
+.glass-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-3d-shadow);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(16px);
+}
+
+.nature-card-3d {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+  border-radius: 1.5rem;
+}
+
+.nature-card-3d:hover {
+  transform: translateY(-8px) scale(1.015);
+  box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.3);
+  border-color: rgba(16, 185, 129, 0.5);
+}
+
+@keyframes floatGlow {
+  0%, 100% { transform: translateY(0px) scale(1); opacity: 0.35; }
+  50% { transform: translateY(-30px) scale(1.15); opacity: 0.7; }
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-nature-float {
+  animation: floatGlow 12s infinite ease-in-out;
+}
+
+.animate-spin-slow {
+  animation: spinSlow 15s linear infinite;
+}
+
+/* Glowing Border Pulse */
+.glow-pulse {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+}
