@@ -9,7 +9,11 @@ using TestPlatform.Data.Repositories;
 using TestPlatform.Service.Helpers;
 using TestPlatform.Service.Services;
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+{
+    Args = args,
+    ContentRootPath = AppContext.BaseDirectory
+});
 
 // Render / Production Port Binding
 var port = Environment.GetEnvironmentVariable("PORT");
