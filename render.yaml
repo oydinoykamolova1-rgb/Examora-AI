@@ -14,7 +14,8 @@ services:
         value: SQLite
 
   # 2. Frontend React Vite Static Site
-  - type: static
+  - type: web
+    env: static
     name: examora-ai-frontend
     rootDir: ./frontend
     buildCommand: npm install && npm run build
